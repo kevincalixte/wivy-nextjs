@@ -40,3 +40,20 @@ button {
     opacity: 1;
   }
 }
+
+/* Animation fadeInOut pour la flèche */
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@layer utilities {
+  .animate-fade-repeat {
+    animation: fadeInOut 4s ease-in-out infinite;
+  }
+}

@@ -16,7 +16,9 @@ export default function Home() {
       </header>
 
       <main className=' flex justify-center w-full h-screen bg-[#070301]'>
-        <IoIosArrowDown className="mt-20 text-white text-4xl"></IoIosArrowDown>
+        <Link href={''}>
+          <IoIosArrowDown className="mt-20 text-white text-4xl animate-fade-repeat" />
+        </Link>
       </main>
 
       <footer className='flex flex-col gap-3 justify-center items-center w-full h-50 bg-black/90 text-white p-10'>

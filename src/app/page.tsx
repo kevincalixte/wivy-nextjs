@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="w-full h-[70vh] bg-cover bg-center bg-[url('/img/home/home.jpg')]">
+      <header className="w-full h-[70vh] bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">
         <div className='text-white absolute bottom-[15%]'>
           <h1 className='text-2xl font-thin flex text-center'>Discover WIVY, where every conversation counts.</h1>
           <Button className="flex justify-center pt-10">Sign in</Button>

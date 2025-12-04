@@ -27,8 +27,8 @@ export default function Home() {
          <Link href={''}><FaLinkedin className="hover:text-blue-700"></FaLinkedin></Link> 
         </span>
         <span className="flex gap-1.5 [&__>a]:hover:underline">
-          <Link href={''}>Terms</Link>
-          <Link href={''}>Privacy Setting</Link>
+          <Link href={''}>Terms - </Link>
+          <Link href={''}>Privacy Setting - </Link>
           <Link href={''}>Cookie policy</Link>
         </span>
         <span>© 2025 Wivy. All Rights Reserved</span>

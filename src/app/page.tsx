@@ -2,20 +2,21 @@ import { FiFacebook, FiInstagram } from "react-icons/fi";
 import { FaLinkedin, FaSnapchatGhost, FaTwitter } from "react-icons/fa";
 import Button from './components/Button/Button';
 import Link from "next/link";
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Home() {
 
   return (
     <>
       <header className="w-full h-[70vh] bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">
-        <div className='text-white absolute bottom-[15%] '>
-          <h1 className='text-2xl font-thin flex text-center  lg:text-4xl'>Discover WIVY, where every conversation counts.</h1>
+        <div className='text-white flex flex-col justify-end '>
+          <h1 className='text-2xl font-thin flex text-center lg:text-4xl'>Discover WIVY, where every conversation counts.</h1>
           <Button className="flex justify-center pt-10 lg:hidden" >Sign in</Button>
         </div>
       </header>
 
-      <main className='w-full h-screen bg-[#070301]'>
-
+      <main className=' flex justify-center w-full h-screen bg-[#070301]'>
+        <IoIosArrowDown className="mt-20 text-white text-4xl"></IoIosArrowDown>
       </main>
 
       <footer className='flex flex-col gap-3 justify-center items-center w-full h-50 bg-black/90 text-white p-10'>

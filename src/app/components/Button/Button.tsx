@@ -2,11 +2,11 @@ import React from 'react';
 
 function Button({ className = '', children }: { className?: string; children?: React.ReactNode }) {
     return (
-        <>
-            <button className={`px-3 py-2 rounded-3xl text-white hover:scale-110 transition-all duration-200 transform-gpu ${className}`} >
+        <div className={className}>
+            <button className={`px-8 py-2 rounded-3xl border text-black bg-white/90 hover:bg-white hover:scale-110 transition-all duration-200 transform-gpu`} >
                 {children}
             </button>
-        </>
+        </div>
     );
 }
 

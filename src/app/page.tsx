@@ -28,7 +28,7 @@ export default function Home() {
         <Contact />
       </main>
 
-      <footer className='flex flex-col gap-3 justify-center items-centerh-50 bg-black text-white p-10'>
+      <footer className='flex flex-col gap-3 justify-center items-center h-50 bg-black text-white p-10'>
         <span className="flex justify-center gap-1.5 text-2xl" >
           <p className="mb-5 text-[1.2rem]">Socials :</p>
           <Link href={''}><FiFacebook className="hover:text-blue-600" /></Link>

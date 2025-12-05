@@ -4,11 +4,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import Link from "next/link";
 import Button from './components/Button/Button';
 import Pricing from "./components/Pricing/Pricing";
+import Preview from "./components/Preview/Preview";
+import Feedback from "./components/Feedback/Feedback";
+import Contact from "./components/Contact/Contact";
 export default function Home() {
 
   return (
     <>
-      <header className="w-full min-h-screen bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">
+      <header className="min-h-screen bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">
         <div className='text-white flex flex-col justify-end items-center '>
           <h1 className='text-2xl font-thin flex text-center lg:text-4xl '>Discover WIVY, where every conversation counts.</h1>
           <Button className="flex justify-center lg:hidden mt-10 bg-white/90 text-black " >Sign in</Button>
@@ -18,17 +21,20 @@ export default function Home() {
         </div>
       </header>
 
-      <main className='flex flex-col items-center w-full text-white '>
+      <main className='flex flex-col items-center text-white '>
+        {/* <Preview /> */}
         <Pricing />
+        <Feedback />
+        <Contact />
       </main>
 
-      <footer className='flex flex-col gap-3 justify-center items-center w-full h-50 bg-black text-white p-10'>
+      <footer className='flex flex-col gap-3 justify-center items-centerh-50 bg-black text-white p-10'>
         <span className="flex justify-center gap-1.5 text-2xl" >
           <p className="mb-5 text-[1.2rem]">Socials :</p>
-          <Link href={''}> <FiFacebook className="hover:text-blue-600" /></Link>
-          <Link href={''}> <FiInstagram className="hover:text-orange-600" /></Link>
+          <Link href={''}><FiFacebook className="hover:text-blue-600" /></Link>
+          <Link href={''}><FiInstagram className="hover:text-orange-600" /></Link>
           <Link href={''}><FaSnapchatGhost className="hover:text-yellow-300" /></Link>
-          <Link href={''}> <FaTwitter className="hover:text-blue-400" /></Link>
+          <Link href={''}><FaTwitter className="hover:text-blue-400" /></Link>
           <Link href={''}><FaLinkedin className="hover:text-blue-700" /></Link>
         </span>
         <span className="flex gap-1.5 [&__>a]:hover:underline">

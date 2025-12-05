@@ -54,6 +54,6 @@ button {
 }
 @layer utilities {
   .animate-fade-repeat {
-    animation: fadeInOut 4s ease-in-out infinite;
+    animation: fadeInOut 3s ease-in-out infinite;
   }
 }

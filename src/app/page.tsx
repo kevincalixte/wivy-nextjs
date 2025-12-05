@@ -1,34 +1,35 @@
 import { FiFacebook, FiInstagram } from "react-icons/fi";
 import { FaLinkedin, FaSnapchatGhost, FaTwitter } from "react-icons/fa";
-import Button from './components/Button/Button';
-import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
-
+import Link from "next/link";
+import Button from './components/Button/Button';
+import Pricing from "./components/Pricing/Pricing";
 export default function Home() {
 
   return (
     <>
-      <header className="w-full h-[70vh] bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">
-        <div className='text-white flex flex-col justify-end '>
-          <h1 className='text-2xl font-thin flex text-center lg:text-4xl'>Discover WIVY, where every conversation counts.</h1>
-          <Button className="flex justify-center pt-10 lg:hidden" >Sign in</Button>
+      <header className="w-full min-h-screen bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">
+        <div className='text-white flex flex-col justify-end items-center '>
+          <h1 className='text-2xl font-thin flex text-center lg:text-4xl '>Discover WIVY, where every conversation counts.</h1>
+          <Button className="flex justify-center lg:hidden mt-10 bg-white/90 text-black " >Sign in</Button>
+          <Link href={''}>
+            <IoIosArrowDown className="m-10 text-4xl animate-fade-repeat" />
+          </Link>
         </div>
       </header>
 
-      <main className=' flex justify-center w-full h-screen bg-[#070301]'>
-        <Link href={''}>
-          <IoIosArrowDown className="mt-20 text-white text-4xl animate-fade-repeat" />
-        </Link>
+      <main className='flex flex-col items-center w-full text-white bg-[#070301]'>
+        <Pricing />
       </main>
 
-      <footer className='flex flex-col gap-3 justify-center items-center w-full h-50 bg-black/90 text-white p-10'>
+      <footer className='flex flex-col gap-3 justify-center items-center w-full h-50 bg-black/92 text-white p-10'>
         <span className="flex justify-center gap-1.5 text-2xl" >
           <p className="mb-5 text-[1.2rem]">Socials :</p>
-          <Link href={''}> <FiFacebook className="hover:text-blue-600"></FiFacebook></Link>
-          <Link href={''}> <FiInstagram className="hover:text-orange-600"></FiInstagram></Link>
-          <Link href={''}><FaSnapchatGhost className="hover:text-yellow-300"></FaSnapchatGhost></Link>
-          <Link href={''}> <FaTwitter className="hover:text-blue-400"></FaTwitter></Link>
-          <Link href={''}><FaLinkedin className="hover:text-blue-700"></FaLinkedin></Link>
+          <Link href={''}> <FiFacebook className="hover:text-blue-600" /></Link>
+          <Link href={''}> <FiInstagram className="hover:text-orange-600" /></Link>
+          <Link href={''}><FaSnapchatGhost className="hover:text-yellow-300" /></Link>
+          <Link href={''}> <FaTwitter className="hover:text-blue-400" /></Link>
+          <Link href={''}><FaLinkedin className="hover:text-blue-700" /></Link>
         </span>
         <span className="flex gap-1.5 [&__>a]:hover:underline">
           <Link href={''}>Terms - </Link>

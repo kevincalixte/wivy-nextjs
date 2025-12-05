@@ -3,6 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Home from './page';
 import NavbarTop from "./components/NavbarTop/NavbarTop";
+import { FiFacebook, FiInstagram } from "react-icons/fi";
+import { FaLinkedin, FaSnapchatGhost, FaTwitter } from "react-icons/fa";
+import Link from "next/link";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -31,6 +35,22 @@ export default function RootLayout({
         <NavbarTop></NavbarTop>
         <Home></Home>
       </body>
+       <footer className='flex flex-col gap-3 justify-center items-center w-full h-50 bg-black/92 text-white p-10'>
+        <span className="flex justify-center gap-1.5 text-2xl" >
+          <p className="mb-5 text-[1.2rem]">Socials :</p>
+          <Link href={''}> <FiFacebook className="hover:text-blue-600" /></Link>
+          <Link href={''}> <FiInstagram className="hover:text-orange-600" /></Link>
+          <Link href={''}><FaSnapchatGhost className="hover:text-yellow-300" /></Link>
+          <Link href={''}> <FaTwitter className="hover:text-blue-400" /></Link>
+          <Link href={''}><FaLinkedin className="hover:text-blue-700" /></Link>
+        </span>
+        <span className="flex gap-1.5 [&__>a]:hover:underline">
+          <Link href={''}>Terms - </Link>
+          <Link href={''}>Privacy Setting - </Link>
+          <Link href={''}>Cookie policy</Link>
+        </span>
+        <span>© 2025 Wivy. All Rights Reserved</span>
+      </footer>
     </html>
   );
 }

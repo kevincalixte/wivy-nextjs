@@ -14,12 +14,12 @@ type Feedback = {
 
 function FeedbackCard({ feedback }: { feedback: Feedback }) {
     return (
-        <div className='flex justify-center  '>
-            <article className=' bg-white/75 hover:bg-white hover:cursor-pointer text-black flex flex-col gap-1 items-center rounded-lg p-5 w-3/4'>
+        <div className='relative flex justify-center '>
+            <article className='absolute bg-white hover:bg-white hover:cursor-pointer text-black flex flex-col gap-1 items-center rounded-lg p-5 w-3/4'>
                 <h3>{feedback.name}</h3>
                 <p className='text-xs text-black-300'>About : {feedback.subject}</p>
                 <p>{feedback.message}</p>
-                <MdQuestionAnswer />
+                <MdQuestionAnswer className='self-end' />
             </article>
         </div>
     );
@@ -34,8 +34,8 @@ function Feedback() {
             .then(data => setFeedbacks(data));
     }, []);
     return (
-        <section className='min-h-40 w-full '> 
-        {/* flex flex-col gap-2 */}
+        <section className='min-h-40 w-full '>
+            {/* flex flex-col gap-2 */}
             <h2 className='text-2xl mb-10 text-center'>Ask Us Anything</h2>
 
             {/* Faire defiler les avis de droite a gauche en continu */}

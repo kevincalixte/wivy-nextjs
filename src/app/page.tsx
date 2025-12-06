@@ -24,7 +24,7 @@ export default function Home() {
       <header className="min-h-screen bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">
         <div className={`text-white flex flex-col justify-end items-center ${showSignin ? 'hidden' : ''}`}>
           <h1 className='text-2xl font-thin flex text-center lg:text-4xl '>Discover WIVY, where every conversation counts.</h1>
-          <Button className="flex justify-center lg:hidden mt-10 bg-white/90 text-black " onClick={handlerSignIn} >Sign in</Button>
+          <Button className="flex justify-center lg:hidden mt-10 bg-white/90 text-black " onClick={handlerSignIn} >Sign Up</Button>
           <Link href={''}>
             <IoIosArrowDown className="m-10 text-4xl animate-fade-repeat" />
           </Link>

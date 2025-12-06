@@ -60,7 +60,7 @@ function Pricing() {
                 </article>
             </div>
 
-            <Button className="bg-white/8 ">Learn More</Button>
+            {/* <Button className="bg-white/8 ">Learn More</Button> */}
         </section>
     )
 }

@@ -15,22 +15,20 @@ export default function Home() {
   const [showSignin, setShowSignin] = useState(false);
 
   const handlerSignIn = () => {
-
     setShowSignin(true);
-
   }
 
   return (
     <>
       <header className="min-h-screen bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">
-        <div className='text-white flex flex-col justify-end items-center '>
+        <div className={`text-white flex flex-col justify-end items-center ${showSignin ? 'hidden' : ''}`}>
           <h1 className='text-2xl font-thin flex text-center lg:text-4xl '>Discover WIVY, where every conversation counts.</h1>
           <Button className="flex justify-center lg:hidden mt-10 bg-white/90 text-black " onClick={handlerSignIn} >Sign in</Button>
-          {showSignin && <Signin />}
           <Link href={''}>
             <IoIosArrowDown className="m-10 text-4xl animate-fade-repeat" />
           </Link>
         </div>
+        {showSignin && <Signin />}
       </header>
 
       <main className='flex flex-col items-center text-white '>

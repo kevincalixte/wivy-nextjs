@@ -1,15 +1,14 @@
 import React from 'react'
+import Link from 'next/link';
+import { IoMdClose } from "react-icons/io";
 
 function Signin() {
-    console.log('click')
-  return (
-    <div className='w-screen h-screen  bg-black fixed z-10'>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facere earum architecto facilis amet, quae optio fugit voluptatem at officiis consequatur expedita eum aliquam est nulla blanditiis. Sapiente nisi velit facilis distinctio, quasi ullam deleniti cumque et quam. Numquam quae eveniet quia? Inventore consequatur unde, debitis asperiores quae tempora ipsa!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facere earum architecto facilis amet, quae optio fugit voluptatem at officiis consequatur expedita eum aliquam est nulla blanditiis. Sapiente nisi velit facilis distinctio, quasi ullam deleniti cumque et quam. Numquam quae eveniet quia? Inventore consequatur unde, debitis asperiores quae tempora ipsa!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facere earum architecto facilis amet, quae optio fugit voluptatem at officiis consequatur expedita eum aliquam est nulla blanditiis. Sapiente nisi velit facilis distinctio, quasi ullam deleniti cumque et quam. Numquam quae eveniet quia? Inventore consequatur unde, debitis asperiores quae tempora ipsa!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facere earum architecto facilis amet, quae optio fugit voluptatem at officiis consequatur expedita eum aliquam est nulla blanditiis. Sapiente nisi velit facilis distinctio, quasi ullam deleniti cumque et quam. Numquam quae eveniet quia? Inventore consequatur unde, debitis asperiores quae tempora ipsa!</p>
-    </div>
-  )
+
+    return (
+        <div className='flex flex-col w-full h-screen bg-black/60 fixed z-10'>
+            <Link href={''} className='self-end m-5 text-3xl'><IoMdClose /></Link>
+        </div>
+    )
 }
 
 export default Signin

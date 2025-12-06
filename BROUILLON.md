@@ -41,3 +41,45 @@ function Feedback() {
     </section>
   );
 }
+
+
+----- FEEDBACK
+import React from 'react';
+import { MdQuestionAnswer } from "react-icons/md";
+
+type Feedback = {
+    id: number;
+    name: string;
+    mail: string;
+    subject: string;
+    message: string;
+    date: string;
+    hour: string;
+};
+
+function FeedbackCard({ feedback }: { feedback: Feedback }) {
+    return (
+        <div className='relative flex justify-center '>
+            <article className='absolute bg-white hover:bg-white hover:cursor-pointer text-black flex flex-col gap-1 items-center rounded-lg p-5 w-3/4'>
+                <h3>{feedback.name}</h3>
+                <p className='text-xs text-black-300'>About : {feedback.subject}</p>
+                <p>{feedback.message}</p>
+                <MdQuestionAnswer className='self-end' />
+            </article>
+        </div>
+    );
+}
+
+export default async function Feedback() {
+    const response = await fetch('http://localhost:3000/data/feedbacks.json', { cache: 'no-store' });
+    const feedbacks: Feedback[] = await response.json();
+
+    return (
+        <section className='min-h-40 w-full '>
+            <h2 className='text-2xl mb-10 text-center'>Ask Us Anything</h2>
+            {feedbacks.map((feedback) => (
+                <FeedbackCard key={feedback.id} feedback={feedback} />
+            ))}
+        </section>
+    );
+}

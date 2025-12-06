@@ -1,3 +1,5 @@
+"use client";
+import React, { useState } from 'react';
 import { FiFacebook, FiInstagram } from "react-icons/fi";
 import { FaLinkedin, FaSnapchatGhost, FaTwitter } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
@@ -7,14 +9,24 @@ import Pricing from "./components/Pricing/Pricing";
 import Preview from "./components/Preview/Preview";
 import Feedback from "./components/Feedback/Feedback";
 import Contact from "./components/Contact/Contact";
+import Signin from "./components/Signin/Signin";
+
 export default function Home() {
+  const [showSignin, setShowSignin] = useState(false);
+
+  const handlerSignIn = () => {
+
+    setShowSignin(true);
+
+  }
 
   return (
     <>
       <header className="min-h-screen bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">
         <div className='text-white flex flex-col justify-end items-center '>
           <h1 className='text-2xl font-thin flex text-center lg:text-4xl '>Discover WIVY, where every conversation counts.</h1>
-          <Button className="flex justify-center lg:hidden mt-10 bg-white/90 text-black " >Sign in</Button>
+          <Button className="flex justify-center lg:hidden mt-10 bg-white/90 text-black " onClick={handlerSignIn} >Sign in</Button>
+          {showSignin && <Signin />}
           <Link href={''}>
             <IoIosArrowDown className="m-10 text-4xl animate-fade-repeat" />
           </Link>

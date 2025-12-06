@@ -19,7 +19,7 @@ function FeedbackCard({ feedback }: { feedback: Feedback }) {
                 <h3>{feedback.name}</h3>
                 <p className='text-xs text-black-300'>About : {feedback.subject}</p>
                 <p>{feedback.message}</p>
-                <MdQuestionAnswer className='self-end' />
+                <p className='flex pt-3 text-xs gap-1 items-center self-end'>Show response<MdQuestionAnswer /></p>
             </article>
         </div>
     );

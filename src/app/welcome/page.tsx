@@ -6,8 +6,10 @@ function welcome() {
   // Retire la classe 'absolute' de la navbar
   useEffect(() => {
     const navbartop = document.getElementById('navbartop');
-    navbartop?.classList.remove('absolute', 'bg-linear-to-b', 'from-black', 'to-transparent');
-    navbartop?.classList.add('fixed', 'bg-white/10');
+    const navbartopcontainer = document.getElementById('navbartopcontainer');
+    navbartop?.classList.remove('absolute', 'bg-linear-to-b', 'from-black', 'to-transparent','w-full');
+    navbartop?.classList.add('fixed', 'bg-white/10','rounded-4xl','h-12','w-[90%]', 'justify-center');
+    // navbartopcontainer?.classList.add('flex','justify-center');
   }, []);
   return (
     <>

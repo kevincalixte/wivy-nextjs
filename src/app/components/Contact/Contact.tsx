@@ -12,7 +12,7 @@ function Contact() {
                     <input type='email' name='email' placeholder='Your Email Address' className='w-38' />
                 </div>
                 <div>
-                    <select name="subject" id="subject" className='w-[50vw] bg-white/8 text-white rounded-2xl px-5 py-2.5 '>
+                    <select name="subject" id="subject" className='w-[75vw] bg-white/8 text-white rounded-2xl px-5 py-2.5 '>
                         <option value="">Choose a subject</option>
                     </select>
                 </div>

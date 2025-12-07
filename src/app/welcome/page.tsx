@@ -2,7 +2,7 @@
 import React from 'react';
 import NavbarBottom from '../components/NavbarBottom/NavbarBottom';
 
-function Welcome() {
+function welcome() {
   return (
     <>
       <div className='text-white'>
@@ -17,4 +17,4 @@ function Welcome() {
   );
 }
 
-export default Welcome;
+export default welcome;

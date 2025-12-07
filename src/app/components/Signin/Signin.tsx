@@ -9,6 +9,7 @@ function Signin() {
         <div className='flex flex-col w-full h-screen bg-black/60 fixed z-10'>
             <Link href={''} className='self-end m-5 text-3xl'><IoMdClose /></Link>
             <form action='' className='flex flex-col bg-black/50 p-5 m-10 rounded-3xl items-center gap-3 [&_div]:p-2 [&_input]:focus:outline-0 [&_input]:border-b-2 [&_input]:border-b-gray-400 [&_textarea]:focus:outline-0'>
+                <h2 className='text-[1.2rem]'>Sign Up</h2>
                 <div className='flex gap-10'>
                     <input type='text' name='name' placeholder='Your name' className='w-46' />
                 </div>

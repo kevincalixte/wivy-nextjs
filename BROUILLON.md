@@ -42,6 +42,29 @@ function Feedback() {
   );
 }
 
+------- exemple link une autre page
+
+"use client";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { createClient } from "@supabase/supabase-js";
+
+const supabase = createClient("SUPABASE_URL", "SUPABASE_ANON_KEY");
+
+export default function HomeLinkIfAuthenticated() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      setUser(user);
+    });
+  }, []);
+
+  return (
+    <>
+      {user && <Link href="/home">Go to Home</Link>}
+    </>
+  );
 
 ----- FEEDBACK
 import React from 'react';
@@ -83,3 +106,13 @@ export default async function Feedback() {
         </section>
     );
 }
+
+
+
+--------------- navbartop 
+
+      {/* <div className='w-full h-16 bg-linear-to-b absolute from-black to bg-transparent'></div>
+      <nav className='flex items-center p-5 text-white absolute w-full'> */}
+      {/* <nav className='flex items-center p-5 text-white  w-full bg-linear-to-b from-transparent to-[#D6C6AF]'> */}
+
+      ----------------

@@ -26,7 +26,9 @@ function Signin() {
                         <span className="mx-5 text-gray-300 font-bold">OR</span>
                         <hr className="grow border-t border-gray-400" />
                     </div>
-                    <Button className="w-40 border text-white ">Sign In</Button>
+                    <Link href={'/welcome'}>
+                        <Button className="w-40 border text-white ">Sign In</Button>
+                    </Link>
                 </div>
             </form>
         </div>

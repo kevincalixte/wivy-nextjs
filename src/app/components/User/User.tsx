@@ -3,9 +3,9 @@ import Tag from '../Tag/Tag';
 
 function User() {
     return (
-        <>
+        <div className='mt-5 mb-22'>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -16,7 +16,7 @@ function User() {
             </article>
         </div>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -27,7 +27,7 @@ function User() {
             </article>
         </div>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -38,7 +38,7 @@ function User() {
             </article>
         </div>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -49,7 +49,7 @@ function User() {
             </article>
         </div>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -60,7 +60,7 @@ function User() {
             </article>
         </div>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -71,7 +71,7 @@ function User() {
             </article>
         </div>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -82,7 +82,7 @@ function User() {
             </article>
         </div>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -93,7 +93,7 @@ function User() {
             </article>
         </div>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -104,7 +104,7 @@ function User() {
             </article>
         </div>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -115,7 +115,7 @@ function User() {
             </article>
         </div>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -126,7 +126,7 @@ function User() {
             </article>
         </div>
         <div className='flex justify-center'>
-            <article className='flex w-[80%] h-24 bg-white/15 m-5 rounded-2xl overflow-hidden'>
+            <article className='flex w-[80%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-1/3 h-full rounded-2xl overflow-hidden'><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
                 <div className='flex gap-2 px-4 py-1'>
                     <h2>Theo,</h2>
@@ -136,7 +136,7 @@ function User() {
                 {/* <Tag></Tag> */}
             </article>
         </div>
-        </>
+        </div>
     )
 }
 

@@ -115,4 +115,32 @@ export default async function Feedback() {
       <nav className='flex items-center p-5 text-white absolute w-full'> */}
       {/* <nav className='flex items-center p-5 text-white  w-full bg-linear-to-b from-transparent to-[#D6C6AF]'> */}
 
-      ----------------
+      ---------------- avis chat gpt
+      Points forts :
+
+Tu utilises bien la structure Next.js (dossiers, pages, composants).
+Tu utilises les hooks React (useState, useEffect) là où il faut.
+Tes composants sont bien séparés et réutilisables (Button, Navbar, Feedback…).
+Tu utilises Tailwind CSS pour le style, ce qui est moderne et efficace.
+Tu utilises le routage Next.js (Link), la gestion des props, et tu commences à manipuler le DOM.
+Ton code est lisible, aéré, et tu ajoutes des commentaires pour t’aider à comprendre.
+Ce qui peut être amélioré pour aller vers un niveau “pro” :
+
+Nommage des composants : Utilise toujours une majuscule pour les noms de fonctions de composants (ex : Welcome au lieu de welcome).
+Manipulation du DOM : Privilégie les props, le state ou le context pour modifier l’apparence des composants, plutôt que document.getElementById et classList. Utilise le DOM direct seulement si c’est indispensable.
+Gestion des classes dynamiques : Pour Tailwind, évite d’ajouter des classes avec classList.add ; préfère les conditions dans le JSX (className={condition ? 'mt-5' : ''}).
+Factorisation : Si tu répètes du code (boutons, formulaires…), pense à créer des composants réutilisables.
+Types : Tu utilises TypeScript, c’est très bien. Continue à typer tes props et tes states pour plus de robustesse.
+Accessibilité : Pense à ajouter des attributs alt sur les images, des labels sur les formulaires, etc.
+Commentaires : Garde les commentaires utiles, mais évite d’en mettre trop ou de laisser des tests/commentaires inutiles dans le code final.
+En résumé :
+
+Ton code est très bon pour un niveau débutant/intermédiaire.
+Tu as déjà des réflexes de développeur pro.
+Continue à pratiquer, à structurer tes composants, à utiliser les outils React/Next.js, et à te documenter sur les bonnes pratiques.
+Tu es sur la bonne voie pour présenter un projet solide au jury et pour un stage en entreprise !
+
+GPT-4.1 • 0x
+
+
+------------

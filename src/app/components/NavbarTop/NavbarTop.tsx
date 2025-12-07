@@ -19,9 +19,8 @@ function NavbarTop() {
         }
       >
         <Link href={'/'} className='flex-1 z-10'><img className='w-10' src={isWelcome ? '' : "/img/logos/wivy-app-logo-transparent.png"} alt="" /></Link>
-        <Link href={''} className="hidden lg:flex items-center gap-1 text-[1.2rem]">Sign Up <PiSignInLight /></Link>
-        <Link href={''} className=''><FaRegEye></FaRegEye></Link>
-      </nav>
+        <Link href={''} className='hidden lg:flex items-center gap-1 text-[1.2rem]'>Sign Up <PiSignInLight /></Link>
+        {isWelcome ? <FaRegEye /> : null}      </nav>
     </div>
   );
 }

@@ -143,4 +143,15 @@ Tu es sur la bonne voie pour présenter un projet solide au jury et pour un stag
 GPT-4.1 • 0x
 
 
-------------
+------------ navbartop
+
+  // ? 'flex items-center p-5 text-white fixed  mt-5 h-12 w-full  '
+            // ? 'flex items-center p-5 text-white fixed bg-white/10 rounded-4xl h-12 w-[90%] mt-5 justify-center'
+      
+      
+  <Link href={''} className={isWelcome ? 'flex bg-amber-50 rounded-full' : 'hidden'}>
+          {/* <div className='rounded-full w-12 h-12 overflow-hidden'><img className='w-full h-full object-cover  ' src="/img/home/album-meet/meet1.jpg" alt="" /></div> */}
+        </Link>
+
+
+        ---------------------

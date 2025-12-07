@@ -13,12 +13,9 @@ import Signin from "./components/Signin/Signin";
 
 export default function Home() {
   const [showSignin, setShowSignin] = useState(false);
-
   const handlerSignIn = () => {
     setShowSignin(true);
-
   }
-
   return (
     <>
       <header className="min-h-screen bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">

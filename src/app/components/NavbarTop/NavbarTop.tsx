@@ -15,7 +15,7 @@ function NavbarTop() {
         id='navbartop'
         className={
           isWelcome
-            ? 'flex items-center p-3 fixed w-[90%] rounded-4xl mt-5 h-10 bg-white/20 text-white'
+            ? 'flex items-center p-3 fixed w-[90%] rounded-4xl mt-5 h-10 bg-white/20 text-white z-10'
             : 'flex items-center p-5 text-white absolute w-full bg-linear-to-b from-black to-transparent'
         }
       >
@@ -25,7 +25,7 @@ function NavbarTop() {
             <p className='text-xs opacity-50'>What are you looking for today ? </p>
           </span>
           : ''}</Link>
-        <Link href={'/'} className='flex-1 z-10'><img className='w-10' src={isWelcome ? '' : "/img/logos/wivy-app-logo-transparent.png"} alt="" /></Link>
+        <Link href={'/'} className='flex-1 z-10'><img className='w-10' src={isWelcome ? undefined : "/img/logos/wivy-app-logo-transparent.png"} alt="" /></Link>
         <Link href={''} className='hidden lg:flex items-center gap-1 text-[1.2rem]'>Sign Up <PiSignInLight /></Link>
         {isWelcome ? <FaRegEye /> : null}
       </nav>

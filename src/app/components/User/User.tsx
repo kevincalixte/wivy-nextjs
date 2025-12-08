@@ -25,7 +25,7 @@ function User() {
                 </div>
 
                 <div className=' flex flex-col  gap-3 pl-4 pt-1'>
-                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-blue-400'></FaStar></span></h2>
                     <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
                     <div className='flex gap-2'>
                         <Tag>Music</Tag>
@@ -41,7 +41,7 @@ function User() {
                 </div>
 
                 <div className=' flex flex-col  gap-3 pl-4 pt-1'>
-                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-blue-400'></FaStar></span></h2>
                     <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
                     <div className='flex gap-2'>
                         <Tag>Music</Tag>
@@ -57,7 +57,7 @@ function User() {
                 </div>
 
                 <div className=' flex flex-col  gap-3 pl-4 pt-1'>
-                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-blue-400'></FaStar></span></h2>
                     <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
                     <div className='flex gap-2'>
                         <Tag>Music</Tag>
@@ -73,7 +73,7 @@ function User() {
                 </div>
 
                 <div className=' flex flex-col  gap-3 pl-4 pt-1'>
-                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-blue-400'></FaStar></span></h2>
                     <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
                     <div className='flex gap-2'>
                         <Tag>Music</Tag>
@@ -89,7 +89,7 @@ function User() {
                 </div>
 
                 <div className=' flex flex-col  gap-3 pl-4 pt-1'>
-                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-blue-400'></FaStar></span></h2>
                     <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
                     <div className='flex gap-2'>
                         <Tag>Music</Tag>
@@ -105,7 +105,7 @@ function User() {
                 </div>
 
                 <div className=' flex flex-col  gap-3 pl-4 pt-1'>
-                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-blue-400'></FaStar></span></h2>
                     <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
                     <div className='flex gap-2'>
                         <Tag>Music</Tag>
@@ -121,7 +121,7 @@ function User() {
                 </div>
 
                 <div className=' flex flex-col  gap-3 pl-4 pt-1'>
-                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-blue-400'></FaStar></span></h2>
                     <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
                     <div className='flex gap-2'>
                         <Tag>Music</Tag>
@@ -137,7 +137,7 @@ function User() {
                 </div>
 
                 <div className=' flex flex-col  gap-3 pl-4 pt-1'>
-                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-blue-400'></FaStar></span></h2>
                     <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
                     <div className='flex gap-2'>
                         <Tag>Music</Tag>

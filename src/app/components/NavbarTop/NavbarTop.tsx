@@ -15,7 +15,7 @@ function NavbarTop() {
         id='navbartop'
         className={
           isWelcome
-            ? 'flex items-center p-3 fixed w-[90%] rounded-4xl mt-5 h-10 bg-white/20 text-white z-10'
+            ? 'flex items-center p-3 fixed w-[90%] backdrop-blur rounded-4xl mt-5 h-10 bg-white/20 text-white z-10'
             : 'flex items-center p-5 text-white absolute w-full bg-linear-to-b from-black to-transparent'
         }
       >

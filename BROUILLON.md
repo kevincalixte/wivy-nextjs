@@ -155,3 +155,23 @@ GPT-4.1 • 0x
 
 
         ---------------------
+         modale user
+
+
+         const [open, setOpen] = React.useState(false);
+const [selectedUser, setSelectedUser] = React.useState(null);
+
+// Dans la card :
+<div onClick={() => { setSelectedUser(user); setOpen(true); }}>
+  {/* Card user */}
+</div>
+
+// Modale :
+{open && (
+  <Modal onClose={() => setOpen(false)}>
+    <UserProfile user={selectedUser} />
+  </Modal>
+)}
+
+
+---------------

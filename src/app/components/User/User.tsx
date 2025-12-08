@@ -14,142 +14,138 @@ import {
     GiAquarius,
     GiPisces
 } from "react-icons/gi";
+import { FaStar, FaHeart } from "react-icons/fa";
 function User() {
     return (
-        <div className='mt-18 mb-22'>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/2  justify-center  h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex  ir  w-full gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25 </span>
-                        <GiAries className='' />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
+        <div className='mt-18 mb-22 flex flex-col items-center'>
+            <article className='flex w-[90%] h-34 bg-white/15 m-3 rounded-2xl overflow-hidden'>
+                <div className='w-3/4 h-full rounded-2xl relative '>
+                    <img className='w-4 h-4 absolute bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
+                    <img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" />
+                </div>
+
+                <div className=' flex flex-col  gap-3 pl-4 pt-1'>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                    <div className='flex gap-2'>
+                        <Tag>Music</Tag>
+                        <Tag>Cat</Tag>
+                        <Tag>Tattoo</Tag>
                     </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/3 h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25</span> <GiAries />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
+                </div>
+            </article>
+            <article className='flex w-[90%] h-34 bg-white/15 m-3 rounded-2xl overflow-hidden'>
+                <div className='w-3/4 h-full rounded-2xl relative '>
+                    <img className='w-4 h-4 absolute bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
+                    <img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" />
+                </div>
+
+                <div className=' flex flex-col  gap-3 pl-4 pt-1'>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                    <div className='flex gap-2'>
+                        <Tag>Music</Tag>
+                        <Tag>Cat</Tag>
+                        <Tag>Tattoo</Tag>
                     </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/3 h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25</span> <GiAries />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
+                </div>
+            </article>
+            <article className='flex w-[90%] h-34 bg-white/15 m-3 rounded-2xl overflow-hidden'>
+                <div className='w-3/4 h-full rounded-2xl relative '>
+                    <img className='w-4 h-4 absolute bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
+                    <img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" />
+                </div>
+
+                <div className=' flex flex-col  gap-3 pl-4 pt-1'>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                    <div className='flex gap-2'>
+                        <Tag>Music</Tag>
+                        <Tag>Cat</Tag>
+                        <Tag>Tattoo</Tag>
                     </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/3 h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25</span> <GiAries />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
+                </div>
+            </article>
+            <article className='flex w-[90%] h-34 bg-white/15 m-3 rounded-2xl overflow-hidden'>
+                <div className='w-3/4 h-full rounded-2xl relative '>
+                    <img className='w-4 h-4 absolute bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
+                    <img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" />
+                </div>
+
+                <div className=' flex flex-col  gap-3 pl-4 pt-1'>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                    <div className='flex gap-2'>
+                        <Tag>Music</Tag>
+                        <Tag>Cat</Tag>
+                        <Tag>Tattoo</Tag>
                     </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/3 h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25</span> <GiAries />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
+                </div>
+            </article>
+            <article className='flex w-[90%] h-34 bg-white/15 m-3 rounded-2xl overflow-hidden'>
+                <div className='w-3/4 h-full rounded-2xl relative '>
+                    <img className='w-4 h-4 absolute bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
+                    <img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" />
+                </div>
+
+                <div className=' flex flex-col  gap-3 pl-4 pt-1'>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                    <div className='flex gap-2'>
+                        <Tag>Music</Tag>
+                        <Tag>Cat</Tag>
+                        <Tag>Tattoo</Tag>
                     </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/3 h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25</span> <GiAries />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
+                </div>
+            </article>
+            <article className='flex w-[90%] h-34 bg-white/15 m-3 rounded-2xl overflow-hidden'>
+                <div className='w-3/4 h-full rounded-2xl relative '>
+                    <img className='w-4 h-4 absolute bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
+                    <img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" />
+                </div>
+
+                <div className=' flex flex-col  gap-3 pl-4 pt-1'>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                    <div className='flex gap-2'>
+                        <Tag>Music</Tag>
+                        <Tag>Cat</Tag>
+                        <Tag>Tattoo</Tag>
                     </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/3 h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25</span> <GiAries />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
+                </div>
+            </article>
+            <article className='flex w-[90%] h-34 bg-white/15 m-3 rounded-2xl overflow-hidden'>
+                <div className='w-3/4 h-full rounded-2xl relative '>
+                    <img className='w-4 h-4 absolute bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
+                    <img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" />
+                </div>
+
+                <div className=' flex flex-col  gap-3 pl-4 pt-1'>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                    <div className='flex gap-2'>
+                        <Tag>Music</Tag>
+                        <Tag>Cat</Tag>
+                        <Tag>Tattoo</Tag>
                     </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/3 h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25</span> <GiAries />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
+                </div>
+            </article>
+            <article className='flex w-[90%] h-34 bg-white/15 m-3 rounded-2xl overflow-hidden'>
+                <div className='w-3/4 h-full rounded-2xl relative '>
+                    <img className='w-4 h-4 absolute bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
+                    <img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" />
+                </div>
+
+                <div className=' flex flex-col  gap-3 pl-4 pt-1'>
+                    <h2 className='flex gap-2 items-center'>Theo,<span>25 </span> <span>  <GiAries /></span> <span className=' w-full flex gap-1 justify-end p-2'><FaStar className='text-yellow-400'></FaStar></span></h2>
+                    <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                    <div className='flex gap-2'>
+                        <Tag>Music</Tag>
+                        <Tag>Cat</Tag>
+                        <Tag>Tattoo</Tag>
                     </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/3 h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25</span> <GiAries />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
-                    </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/3 h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25</span> <GiAries />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
-                    </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/3 h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25</span> <GiAries />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
-                    </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
-            <div className='flex justify-center'>
-                <article className='flex w-[85%] h-24 bg-white/15 m-3 rounded-2xl overflow-hidden'>
-                    <div className='w-1/3 h-full rounded-2xl  '><img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" /></div>
-                    <div className='flex gap-2 px-4 py-1'>
-                        <h2>Theo,</h2>
-                        <span>25</span> <GiAries />
-                        {/* <span className=''>Signe astrologique</span> <GiAries/> */}
-                    </div>
-                    {/* <Tag></Tag> */}
-                </article>
-            </div>
+                </div>
+            </article>
         </div>
     )
 }

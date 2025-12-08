@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { PiSignInLight } from "react-icons/pi";
 import { usePathname } from 'next/navigation';
 import { FaRegEye } from "react-icons/fa";
+import { FiSearch } from 'react-icons/fi';
 
 function NavbarTop() {
   const pathname = usePathname();
@@ -18,9 +19,16 @@ function NavbarTop() {
             : 'flex items-center p-5 text-white absolute w-full bg-linear-to-b from-black to-transparent'
         }
       >
+        <Link href={'/'} className=''>{isWelcome ?
+          <span className='flex items-center gap-1.5 '>
+            <FiSearch></FiSearch>
+            <p className='text-xs opacity-50'>What are you looking for today ? </p>
+          </span>
+          : ''}</Link>
         <Link href={'/'} className='flex-1 z-10'><img className='w-10' src={isWelcome ? '' : "/img/logos/wivy-app-logo-transparent.png"} alt="" /></Link>
         <Link href={''} className='hidden lg:flex items-center gap-1 text-[1.2rem]'>Sign Up <PiSignInLight /></Link>
-        {isWelcome ? <FaRegEye /> : null}      </nav>
+        {isWelcome ? <FaRegEye /> : null}
+      </nav>
     </div>
   );
 }

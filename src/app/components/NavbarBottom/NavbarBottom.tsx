@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FiSearch, FiUsers, FiHeart, FiMessageCircle, FiMessageSquare, FiHome, FiUser } from 'react-icons/fi';
+import { FiSearch, FiStar,FiUsers, FiHeart, FiMessageCircle, FiMessageSquare, FiHome, FiUser } from 'react-icons/fi';
 import { IoMdSync } from "react-icons/io";
 
 function NavbarBottom() {
@@ -11,7 +11,7 @@ function NavbarBottom() {
         <ul className='flex gap-3 justify-evenly w-full text-2xl'>
           <li><Link href={""} className="flex items-center gap-1"><FiHome /></Link></li>
           <li><Link href={""} className="flex items-center gap-1"><FiMessageSquare /></Link></li>
-          <li><Link href={""} className="flex items-center gap-1"><FiSearch /></Link></li>
+          <li><Link href={""} className="flex items-center gap-1"><FiStar /></Link></li>
           <li><Link href={""} className="flex items-center gap-1">< IoMdSync /></Link></li>
           <li><Link href={""} className="flex items-center gap-1">< FiUser /></Link></li>
         </ul>

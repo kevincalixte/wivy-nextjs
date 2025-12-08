@@ -17,7 +17,7 @@ export default function Home() {
     setShowSignin(true);
   }
   return (
-    <>
+    <div className='w-screen'>
       <header className="min-h-screen bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">
         <div className={`text-white flex flex-col justify-end items-center ${showSignin ? 'hidden' : ''}`}>
           <h1 className='text-2xl font-thin flex text-center lg:text-4xl '>Discover WIVY, where every conversation counts.</h1>
@@ -52,6 +52,6 @@ export default function Home() {
         </span>
         <span>© 2025 Wivy. All Rights Reserved</span>
       </footer>
-    </>
+    </div>
   );
 }

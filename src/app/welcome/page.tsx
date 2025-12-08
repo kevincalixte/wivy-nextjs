@@ -8,7 +8,7 @@ function welcome() {
 
   return (
     <>
-    {/* <NavbarInfos></NavbarInfos> */}
+    <NavbarInfos></NavbarInfos>
     
       <div className='text-white'>
         {/* Configuration du profil */}

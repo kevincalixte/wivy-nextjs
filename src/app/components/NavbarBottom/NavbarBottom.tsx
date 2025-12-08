@@ -12,7 +12,7 @@ function NavbarBottom() {
           {/* Selected :  bg-white/20 rounded-2xl p-2 */}
           <li><Link href={""} className="flex items-center gap-1"><FiHome /></Link></li>
           <li><Link href={""} className="flex items-center gap-1"><FiStar /></Link></li>
-          <li><Link href={""} className="flex items-center gap-1"><FiMessageSquare /></Link></li>
+          <li><Link href={"/messages"} className="flex items-center gap-1"><FiMessageSquare /></Link></li>
           <li><Link href={""} className="flex items-center gap-1">< IoMdSync /></Link></li>
           <li><Link href={""} className="flex items-center gap-1">< FiUser /></Link></li>
         </ul>

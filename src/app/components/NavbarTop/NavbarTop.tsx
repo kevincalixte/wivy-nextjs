@@ -25,7 +25,11 @@ function NavbarTop() {
             <p className='text-xs opacity-50'>What are you looking for today ? </p>
           </span>
           : ''}</Link>
-        <Link href={'/'} className='flex-1 z-10'><img className='w-10' src={isWelcome ? undefined : "/img/logos/wivy-app-logo-transparent.png"} alt="" /></Link>
+        <Link href={'/'} className='flex-1 z-10'>
+          {!isWelcome && (
+            <img className='w-10' src="/img/logos/wivy-app-logo-transparent.png" alt="" />
+          )}
+        </Link>
         <Link href={''} className='hidden lg:flex items-center gap-1 text-[1.2rem]'>Sign Up <PiSignInLight /></Link>
         {isWelcome ? <FaRegEye /> : null}
       </nav>

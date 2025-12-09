@@ -16,13 +16,6 @@ export default function Home() {
   const handlerSignIn = () => {
     setShowSignin(true);
   }
-  // A modifier dans le body 
-  useEffect(() => {
-    document.body.classList.add('overflow-hidden');
-    return () => {
-      document.body.classList.remove('overflow-hidden');
-    };
-  }, []);
   return (
     <div className='w-screen'>
       <header className="min-h-screen bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">

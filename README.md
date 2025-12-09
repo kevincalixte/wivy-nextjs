@@ -1,8 +1,9 @@
 # WIVY
 - En cours de développement
+- Mobile First Iphone SE
 ## Technologies utilisées
-- TypeScript
 - Next.js
+- TypeScript
 - Supabase
 - Tailwind CSS
 - React Icons

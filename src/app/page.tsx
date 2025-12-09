@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FiFacebook, FiInstagram } from "react-icons/fi";
 import { FaLinkedin, FaSnapchatGhost, FaTwitter } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
@@ -16,6 +16,13 @@ export default function Home() {
   const handlerSignIn = () => {
     setShowSignin(true);
   }
+  // A modifier dans le body 
+  useEffect(() => {
+    document.body.classList.add('overflow-hidden');
+    return () => {
+      document.body.classList.remove('overflow-hidden');
+    };
+  }, []);
   return (
     <div className='w-screen'>
       <header className="min-h-screen bg-cover bg-center bg-[url('/img/home/home.jpg')] flex justify-center">

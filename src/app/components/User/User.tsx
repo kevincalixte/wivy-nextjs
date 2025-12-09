@@ -22,7 +22,7 @@ function User() {
     const handlerUser = () => setShowProfile(true);
     return (
         <>
-{showProfile && <UserProfile onClose={() => setShowProfile(false)} />}            <div onClick={handlerUser} id='User' className='mt-18 mb-22 flex flex-col items-center'>
+            {showProfile && <UserProfile onClose={() => setShowProfile(false)} />}            <div onClick={handlerUser} id='User' className='mt-18 mb-22 flex flex-col items-center'>
                 <article className='flex w-[90%] h-34 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                     <div className='w-3/4 h-full rounded-2xl relative '>
                         <img className='w-4 h-4 absolute bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />

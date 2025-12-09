@@ -14,7 +14,7 @@ function NavbarBottom() {
           <li><Link href={""} className="flex items-center gap-1"><FiStar /></Link></li>
           <li><Link href={"/messages"} className="flex items-center gap-1"><FiMessageSquare /></Link></li>
           {/* <li><Link href={""} className="flex items-center gap-1">< IoMdSync /></Link></li> */}
-          <li><Link href={""} className="flex items-center gap-1">< FiUser /></Link></li>
+          <li><Link href={"/account"} className="flex items-center gap-1">< FiUser /></Link></li>
         </ul>
       </nav>
     </div>

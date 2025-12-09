@@ -9,8 +9,8 @@ function welcome() {
   return (
     <>
     <NavbarInfos></NavbarInfos>
-    
-      <div className='text-white'>
+  
+      <div className='text-white '>
         {/* Configuration du profil */}
         {/* Page principale 'if last_mode is list'*/}
         {/* Load account (navbartop: profile picture..., navbarbottom: messages, notifications,...) */}

@@ -38,7 +38,7 @@ function NavbarTop() {
         <Link href={'/'} className=''>{isMessages ?
           <div className='flex justify-evenly p-5 '>
             <span className=''>Messages</span>
-            <span className=''>Favorites</span>
+            {/* <span className=''>Favorites</span> */}
           </div>
           : ''}</Link>
 

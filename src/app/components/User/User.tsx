@@ -15,9 +15,13 @@ import {
     GiPisces
 } from "react-icons/gi";
 import { FaStar, FaHeart } from "react-icons/fa";
+import UserProfile from '../UserProfile/UserProfile';
+
 function User() {
     return (
-        <div className='mt-18 mb-22 flex flex-col items-center'>
+        <>
+          <UserProfile></UserProfile>
+        <div id='User' className='mt-18 mb-22 flex flex-col items-center'>
             <article className='flex w-[90%] h-34 bg-white/15 m-3 rounded-2xl overflow-hidden'>
                 <div className='w-3/4 h-full rounded-2xl relative '>
                     <img className='w-4 h-4 absolute bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
@@ -155,6 +159,7 @@ function User() {
                 </div>
             </article>
         </div>
+        </>
     )
 }
 

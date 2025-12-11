@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from "next/link";
 
 import { FiFacebook, FiInstagram } from "react-icons/fi";
@@ -12,20 +12,20 @@ import Contact from "./components/Contact/Contact";
 import Feedback from "./components/Feedback/Feedback";
 import Preview from "./components/Preview/Preview";
 import Pricing from "./components/Pricing/Pricing";
-import Signin from "./components/Signin/Signin";
+import SignUp from "./components/SignUp/SignUp"
 
 export default function Home() {
   // Affiche modale d'inscription/connexion
   const [showSignUp, setShowSignUp] = useState(false);
   return (
-    <div className='w-screen'>
+    <>
       <header className="min-h-screen flex justify-center bg-cover bg-center bg-[url('/img/home/home.jpg')]">
-        <div className={`flex flex-col justify-end items-center text-white ${showSignUp? 'hidden' : ''}`}>
+        <div className={`flex flex-col justify-end items-center text-white ${showSignUp ? 'hidden' : ''}`}>
           <h1 className='flex text-center text-2xl lg:text-4xl font-thin'>Discover WIVY, where every conversation counts.</h1>
           <Button className="flex justify-center mt-10 lg:hidden bg-white/90 text-black" onClick={() => setShowSignUp(true)} >Sign Up</Button>
           <Link href={''}><IoIosArrowDown className="my-10 text-4xl animate-fade-repeat" /></Link>
         </div>
-        {showSignUp && <Signin />}
+        {showSignUp && <SignUp onClose={()=> setShowSignUp(false)}/>}
       </header>
 
       <main className='flex flex-col items-center text-white'>
@@ -51,6 +51,6 @@ export default function Home() {
         </span>
         <span>© 2025 Wivy. All Rights Reserved</span>
       </footer>
-    </div>
+    </>
   );
 }

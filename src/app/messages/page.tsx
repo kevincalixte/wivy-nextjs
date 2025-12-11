@@ -4,8 +4,7 @@ import UserMessage from '../components/UserMessage/UserMessage';
 
 function messages() {
   return (
-    <div className='w-full min-h-screen flex flex-col items-center '>
-      {/* Navbartop messages + favs */}
+    <div className='w-full flex flex-col'>
       <UserMessage/>
       <NavbarBottom />
     </div>

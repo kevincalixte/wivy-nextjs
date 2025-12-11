@@ -45,7 +45,7 @@ function User() {
                         </div>
                     </div>
                 </article>
-                <article className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
+                <article onClick={() => setShowProfile(true)} className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
                     <div className='relative w-3/4 h-full rounded-2xl'>
                         <img className='absolute w-4 h-4 bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
                         <FaStar className='absolute bottom-2 left-7 text-blue-400' />
@@ -62,7 +62,7 @@ function User() {
                         </div>
                     </div>
                 </article>
-                <article className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
+                <article onClick={() => setShowProfile(true)} className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
                     <div className='relative w-3/4 h-full rounded-2xl'>
                         <img className='absolute w-4 h-4 bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
                         <FaStar className='absolute bottom-2 left-7 text-blue-400' />
@@ -79,7 +79,7 @@ function User() {
                         </div>
                     </div>
                 </article>
-                <article className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
+                <article onClick={() => setShowProfile(true)} className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
                     <div className='relative w-3/4 h-full rounded-2xl'>
                         <img className='absolute w-4 h-4 bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
                         <FaStar className='absolute bottom-2 left-7 text-blue-400' />
@@ -96,7 +96,7 @@ function User() {
                         </div>
                     </div>
                 </article>
-                <article className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
+                <article onClick={() => setShowProfile(true)} className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
                     <div className='relative w-3/4 h-full rounded-2xl'>
                         <img className='absolute w-4 h-4 bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
                         <FaStar className='absolute bottom-2 left-7 text-blue-400' />
@@ -113,7 +113,7 @@ function User() {
                         </div>
                     </div>
                 </article>
-                <article className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
+                <article onClick={() => setShowProfile(true)} className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
                     <div className='relative w-3/4 h-full rounded-2xl'>
                         <img className='absolute w-4 h-4 bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
                         <FaStar className='absolute bottom-2 left-7 text-blue-400' />
@@ -130,7 +130,7 @@ function User() {
                         </div>
                     </div>
                 </article>
-                <article className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
+                <article onClick={() => setShowProfile(true)} className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
                     <div className='relative w-3/4 h-full rounded-2xl'>
                         <img className='absolute w-4 h-4 bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
                         <FaStar className='absolute bottom-2 left-7 text-blue-400' />
@@ -147,7 +147,7 @@ function User() {
                         </div>
                     </div>
                 </article>
-                <article className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
+                <article onClick={() => setShowProfile(true)} className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
                     <div className='relative w-3/4 h-full rounded-2xl'>
                         <img className='absolute w-4 h-4 bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
                         <FaStar className='absolute bottom-2 left-7 text-blue-400' />
@@ -164,7 +164,7 @@ function User() {
                         </div>
                     </div>
                 </article>
-                <article className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
+                <article onClick={() => setShowProfile(true)} className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
                     <div className='relative w-3/4 h-full rounded-2xl'>
                         <img className='absolute w-4 h-4 bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
                         <FaStar className='absolute bottom-2 left-7 text-blue-400' />
@@ -181,7 +181,7 @@ function User() {
                         </div>
                     </div>
                 </article>
-                <article className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
+                <article onClick={() => setShowProfile(true)} className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
                     <div className='relative w-3/4 h-full rounded-2xl'>
                         <img className='absolute w-4 h-4 bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
                         <FaStar className='absolute bottom-2 left-7 text-blue-400' />
@@ -198,6 +198,7 @@ function User() {
                         </div>
                     </div>
                 </article>
+               
             </div>
         </>
     )

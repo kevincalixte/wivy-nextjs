@@ -15,7 +15,7 @@ import Pricing from "./components/Pricing/Pricing";
 import SignUp from "./components/SignUp/SignUp"
 
 export default function Home() {
-  // Affiche modale d'inscription/connexion
+  // Affiche la modale d'inscription/connexion
   const [showSignUp, setShowSignUp] = useState(false);
   return (
     <>

@@ -4,8 +4,14 @@ import { IoIosCloseCircle } from "react-icons/io";
 
 function UserProfile({ onClose }: { onClose: () => void }) {
   // A faire : Bloque le scroll au montage de la modale et masque la navbar top (overflow hidden sur body)
+   useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, []);
   return (
-    <div className='fixed z-10 w-full h-full bg-black overflow-hidden'>
+    <div className='fixed z-10 w-full h-full bg-black'>
 
       <div>
         <img className='absolute w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" />

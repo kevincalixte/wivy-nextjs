@@ -1,22 +1,32 @@
 import Link from 'next/link'
-import { FiSearch, FiStar, FiUsers, FiHeart, FiMessageCircle, FiMessageSquare, FiHome, FiUser } from 'react-icons/fi';
-import { IoMdSync } from "react-icons/io";
+import { FiSearch, FiStar, FiUsers, FiHeart, FiMessageCircle, FiMessageSquare, FiHome, FiUser, FiInfo } from 'react-icons/fi';
 
-function NavbarBottom() {
+function NavbarBottom({ onProfile }: { onProfile?: boolean }) {
 
   return (
 
     <div className='flex justify-center'>
-      <nav className=' flex items-center p-3 fixed w-[90%] backdrop-blur rounded-4xl bottom-0 mb-5 h-15 bg-white/10 text-white'>
-        <ul className='flex gap-3 justify-evenly w-full text-2xl'>
-          {/* Selected :  bg-white/20 rounded-2xl p-2 */}
-          <li><Link href={"/welcome"} className="flex items-center gap-1"><FiHome /></Link></li>
-          <li><Link href={"/favorites"} className="flex items-center gap-1"><FiStar /></Link></li>
-          <li><Link href={"/messages"} className="flex items-center gap-1"><FiMessageSquare /></Link></li>
-          {/* <li><Link href={""} className="flex items-center gap-1">< IoMdSync /></Link></li> */}
-          <li><Link href={"/account"} className="flex items-center gap-1">< FiUser /></Link></li>
-        </ul>
-      </nav>
+      {/* Selected :  bg-white/20 rounded-2xl p-2 */}
+
+      {onProfile ?
+        <nav className='fixed bottom-0 mb-5 flex items-center w-[50%] h-15 p-5 rounded-4xl backdrop-blur bg-white/10 text-white'>
+          <ul className='flex items-center justify-around w-full text-2xl'>
+            <li><button><FiInfo /></button></li>
+            <li><button><FiStar /></button></li>
+            <li><button><FiMessageSquare /></button></li>
+          </ul>
+        </nav>
+        :
+        <nav className='fixed bottom-0 mb-5 flex items-center w-[90%] h-15 p-3 rounded-4xl backdrop-blur bg-white/10 text-white'>
+          <ul className='flex w-full gap-3 justify-evenly text-2xl'>
+            <li><Link href={"/welcome"} className="flex items-center gap-1"><FiHome /></Link></li>
+            <li><Link href={"/favorites"} className="flex items-center gap-1"><FiStar /></Link></li>
+            <li><Link href={"/messages"} className="flex items-center gap-1"><FiMessageSquare /></Link></li>
+            <li><Link href={"/account"} className="flex items-center gap-1">< FiUser /></Link></li>
+          </ul>
+        </nav>
+
+      }
     </div>
   )
 }

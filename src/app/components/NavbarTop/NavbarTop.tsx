@@ -5,6 +5,7 @@ import { PiSignInLight } from "react-icons/pi";
 import { usePathname } from 'next/navigation';
 import { FaRegEye } from "react-icons/fa";
 import { FiSearch } from 'react-icons/fi';
+import { useState } from 'react';
 
 function NavbarTop() {
   // Changer le style de la NavbarTop en fonction de la page
@@ -13,6 +14,7 @@ function NavbarTop() {
   const isMessages = pathname === '/messages';
   const isAccount = pathname === '/account';
   const isFavorites = pathname === '/favorites';
+
   return (
 
     <div id='navbartop-container' className='flex justify-center'>

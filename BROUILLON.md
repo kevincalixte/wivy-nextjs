@@ -174,4 +174,8 @@ const [selectedUser, setSelectedUser] = React.useState(null);
 )}
 
 
+--------------- navbarbottom focus 
+
+ [&>nav>ul>li>button:focus]:bg-white/20 [&>nav>ul>li>button:focus]:rounded-full  [&>nav>ul>li>button:focus]:px-5 [&>nav>ul>li>button:focus]:py-2 
+
 ---------------

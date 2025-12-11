@@ -16,15 +16,19 @@ import {
 } from "react-icons/gi";
 import { FaStar, FaHeart } from "react-icons/fa";
 import UserProfile from '../UserProfile/UserProfile';
+import NavbarTop from '../NavbarTop/NavbarTop';
 
 function User() {
     const [showProfile, setShowProfile] = useState(false);
+    const [showNavBarTop, setShowNavBarTop] = useState(false);
+
     return (
         <>
-            {showProfile && <UserProfile onClose={() => setShowProfile(false)} />}
-            <div onClick={() => setShowProfile(true)} id='User' className='flex flex-col items-center mt-18 mb-22'>
+            {showNavBarTop && <NavbarTop />}
+            {showProfile && <UserProfile onClose={() => { setShowProfile(false); setShowNavBarTop(true); }} />}
 
-                <article className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
+            <div id='User' className='flex flex-col items-center mt-18 mb-22'>
+                <article onClick={() => setShowProfile(true)} className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
                     <div className='relative w-3/4 h-full rounded-2xl'>
                         <img className='absolute w-4 h-4 bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
                         <FaStar className='absolute bottom-2 left-7 text-blue-400' />

@@ -14,6 +14,7 @@ function NavbarTop() {
   const isMessages = pathname === '/messages';
   const isAccount = pathname === '/account';
   const isFavorites = pathname === '/favorites';
+  const isChat = pathname === '/chat';
 
   return (
 
@@ -29,7 +30,9 @@ function NavbarTop() {
                 ? 'absolute w-full'
                 : isFavorites
                   ? 'absolute w-full'
-                  : 'absolute w-full flex items-center p-5 bg-linear-to-b from-black to-transparent text-white'
+                  : isChat
+                    ? 'absolute w-full'
+                    : 'absolute w-full flex items-center p-5 bg-linear-to-b from-black to-transparent text-white'
         }
       >
         {/* Page Welcome */}
@@ -71,7 +74,7 @@ function NavbarTop() {
 
         <Link href={'/'} className='flex-1 z-10'>
           {/* Ne pas afficher le logo pour ces pages */}
-          {!(isWelcome || isMessages || isAccount || isFavorites) && (
+          {!(isWelcome || isMessages || isAccount || isFavorites || isChat) && (
             <img className='w-10' src="/img/logos/wivy-app-logo-transparent.png" alt="" />
           )}
         </Link>

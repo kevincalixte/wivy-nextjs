@@ -25,8 +25,8 @@ function NavbarBottom({ onProfile }: { onProfile?: boolean }) {
             <li><Link href={"/account"} className="flex items-center gap-1">< FiUser /></Link></li>
           </ul>
         </nav>
-
       }
+
     </div>
   )
 }

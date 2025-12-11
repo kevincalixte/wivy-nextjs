@@ -16,7 +16,7 @@ type Feedback = {
 function FeedbackCard({ feedback }: { feedback: Feedback }) {
     return (
         <div className='relative flex justify-center'>
-            <article className='absolute flex flex-col items-center w-3/4 gap-1 p-5 rounded-xs bg-gray-300 text-black hover:bg-white hover:cursor-pointer'>
+            <article className='absolute flex flex-col items-center w-[80%] gap-1 p-5 rounded-xs bg-gray-300 text-black hover:bg-white hover:cursor-pointer'>
                 <h3>{feedback.name}</h3>
                 <p className='text-xs text-black-300'>About : {feedback.subject}</p>
                 <p>{feedback.message}</p>

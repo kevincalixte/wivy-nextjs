@@ -30,13 +30,16 @@ function User() {
             <div id='User' className='flex flex-col items-center mt-18 mb-22'>
                 <article onClick={() => setShowProfile(true)} className='flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden bg-white/10'>
                     <div className='relative w-3/4 h-full rounded-2xl'>
+                        <img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" />
                         <img className='absolute w-4 h-4 bottom-2 left-2' src="/img/user/user-connected.svg" alt="" />
                         <FaStar className='absolute bottom-2 left-7 text-blue-400' />
-                        <img className='w-full h-full object-cover' src="/img/home/album-meet/meet1.jpg" alt="" />
                     </div>
 
                     <div className='flex flex-col justify-center gap-3 pl-4 pt-1'>
-                        <h2 className='flex items-center gap-2'>Theo,<span>25 </span> <span><GiAries /></span></h2>
+                        <div className='flex items-center justify-between'>
+                            <h2 className='flex items-center gap-2'>Theo,<span>25 </span> <span><GiAries /></span></h2>
+                            <FaHeart className='mr-5 text-fuchsia-600'></FaHeart>
+                        </div>
                         <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
                         <div className='flex gap-2'>
                             <Tag>Music</Tag>
@@ -198,7 +201,7 @@ function User() {
                         </div>
                     </div>
                 </article>
-               
+
             </div>
         </>
     )

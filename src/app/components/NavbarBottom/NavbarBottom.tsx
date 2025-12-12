@@ -13,6 +13,7 @@ function NavbarBottom({ onProfile, onChat }: { onProfile?: boolean; onChat?: boo
           <ul className='flex items-center justify-around w-full text-2xl'>
             <li><button><FiInfo /></button></li>
             <li><button><FiStar /></button></li>
+            <li><button><FiHeart /></button></li>
             <li><button><FiMessageSquare /></button></li>
           </ul>
         </nav>

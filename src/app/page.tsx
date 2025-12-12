@@ -29,7 +29,7 @@ export default function Home() {
       </header>
 
       <main className='flex flex-col items-center text-white'>
-        {/* <Preview /> */}
+        <Preview />
         <Pricing />
         <Feedback />
         <Contact />

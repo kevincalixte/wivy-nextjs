@@ -1,12 +1,11 @@
 import React from 'react'
 
 function ChatMessage({ onChat }: { onChat?: boolean }) {
-    // A faire : nav profil  + area message + message left right + navbottom + photos/fichier type send 
     return (
         <section className='my-25 w-full h-full flex flex-col gap-3 px-5'>
             {/* Bulle user me */}
             <div className='flex flex-col items-end'>
-                <div className=' textc max-w-[70%] bg-white/20 rounded-3xl px-3 py-2'>
+                <div className='  max-w-[70%] bg-white/20 rounded-3xl px-3 py-2'>
                     <span>Lorem ipsum dolor sit amet riatur commodi esse. Dolorum doloremque laborum delectus sed! 😉</span>
                 </div>
                 <span className='text-xs pt-2 px-2'>Today 21:32</span>
@@ -20,7 +19,7 @@ function ChatMessage({ onChat }: { onChat?: boolean }) {
             </div>
             {/* Bulle user me */}
             <div className='flex flex-col items-end'>
-                <div className=' textc max-w-[70%] bg-white/20 rounded-3xl px-3 py-2'>
+                <div className='  max-w-[70%] bg-white/20 rounded-3xl px-3 py-2'>
                     <span>Lorem ipsum dolor sit amet riatur commodi esse. Dolorum doloremque laborum delectus sed! 😉</span>
                 </div>
                 <span className='text-xs pt-2 px-2'>Today 21:32</span>
@@ -34,7 +33,7 @@ function ChatMessage({ onChat }: { onChat?: boolean }) {
             </div>
             {/* Bulle user me */}
             <div className='flex flex-col items-end'>
-                <div className=' textc max-w-[70%] bg-white/20 rounded-3xl px-3 py-2'>
+                <div className='  max-w-[70%] bg-white/20 rounded-3xl px-3 py-2'>
                     <span>Lorem ipsum dolor sit amet riatur commodi esse. Dolorum doloremque laborum delectus sed! 😉</span>
                 </div>
                 <span className='text-xs pt-2 px-2'>Today 21:32</span>
@@ -48,7 +47,7 @@ function ChatMessage({ onChat }: { onChat?: boolean }) {
             </div>
             {/* Bulle user me */}
             <div className='flex flex-col items-end'>
-                <div className=' textc max-w-[70%] bg-white/20 rounded-3xl px-3 py-2'>
+                <div className='  max-w-[70%] bg-white/20 rounded-3xl px-3 py-2'>
                     <span>Lorem ipsum dolor sit amet riatur commodi esse. Dolorum doloremque laborum delectus sed! 😉</span>
                 </div>
                 <span className='text-xs pt-2 px-2'>Today 21:32</span>
@@ -62,7 +61,7 @@ function ChatMessage({ onChat }: { onChat?: boolean }) {
             </div>
             {/* Bulle user me */}
             <div className='flex flex-col items-end'>
-                <div className=' textc max-w-[70%] bg-white/20 rounded-3xl px-3 py-2'>
+                <div className='  max-w-[70%] bg-white/20 rounded-3xl px-3 py-2'>
                     <span>Lorem ipsum dolor sit amet riatur commodi esse. Dolorum doloremque laborum delectus sed! 😉</span>
                 </div>
                 <span className='text-xs pt-2 px-2'>Today 21:32</span>

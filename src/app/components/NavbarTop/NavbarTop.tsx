@@ -76,8 +76,8 @@ function NavbarTop() {
         {/* Page Chat */}
         <Link href={'/'} className=''>
           {isChat ?
-            <div className='p-5'>
-              <div className='flex overflow-hidden rounded-2xl bg-white/20'>
+            <div className='p-5 '>
+              <div className='flex overflow-hidden rounded-2xl bg-white/20  backdrop-blur'>
                 <div className='relative w-1/3'>
                   <img className='w-full h-15 object-cover rounded-l-2xl' src="/img/home/album-meet/meet2.jpg" alt="" />
                 </div>

@@ -32,7 +32,7 @@ function NavbarTop() {
                 : isFavorites
                   ? 'absolute w-full'
                   : isChat
-                    ? 'absolute w-full'
+                    ? 'fixed w-full'
                     : 'absolute w-full flex items-center p-5 bg-linear-to-b from-black to-transparent text-white'
         }
       >

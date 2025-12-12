@@ -36,7 +36,7 @@ function User() {
                     </div>
 
                     <div className='flex flex-col justify-center gap-3 pl-4 pt-1'>
-                        <h2 className='flex items-center gap-2'>Theo,<span>25 </span> <span><GiAries /></span> <span className='flex justify-end w-full gap-1 p-2'></span></h2>
+                        <h2 className='flex items-center gap-2'>Theo,<span>25 </span> <span><GiAries /></span></h2>
                         <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
                         <div className='flex gap-2'>
                             <Tag>Music</Tag>

@@ -6,7 +6,7 @@ function chat() {
   return (
     <div>
       <ChatMessage></ChatMessage>
-      <NavbarBottom></NavbarBottom>
+      <NavbarBottom onChat={true}></NavbarBottom>
     </div>
   )
 }

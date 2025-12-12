@@ -1,11 +1,12 @@
 'use client';
 import Link from 'next/link';
+import { useState } from 'react';
 
 import { PiSignInLight } from "react-icons/pi";
 import { usePathname } from 'next/navigation';
-import { FaRegEye } from "react-icons/fa";
-import { FiSearch } from 'react-icons/fi';
-import { useState } from 'react';
+import { FaRegEye, FaStar } from "react-icons/fa";
+import { FiSearch, FiArrowLeft } from 'react-icons/fi';
+import { GiAries } from 'react-icons/gi';
 
 function NavbarTop() {
   // Changer le style de la NavbarTop en fonction de la page
@@ -68,6 +69,27 @@ function NavbarTop() {
           {isFavorites ?
             <div className='flex justify-evenly p-5'>
               <span className='text-xl'>Favorites</span>
+            </div>
+            : ''}
+        </Link>
+
+        {/* Page Chat */}
+        <Link href={'/'} className=''>
+          {isChat ?
+            <div className='p-5'>
+              <div className='flex overflow-hidden rounded-2xl bg-white/20'>
+                <div className='relative w-1/3'>
+                  <img className='w-full h-15 object-cover rounded-l-2xl' src="/img/home/album-meet/meet2.jpg" alt="" />
+                </div>
+                <div className='relative flex items-center w-full ml-3 gap-1.5'>
+                  <div>
+                    <img className='w-4 h-4 left-2 bottom-2' src="/img/user/user-connected.svg" alt="" />
+                  </div>
+                  <h2 className='flex items-center gap-2'>Justine,<span>25 </span> <span><GiAries /></span></h2>
+                  <FaStar className='text-blue-400' />
+                  <Link href={'/messages'} className='absolute right-3 text-2xl'><FiArrowLeft /></Link>
+                </div>
+              </div>
             </div>
             : ''}
         </Link>

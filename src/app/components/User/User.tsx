@@ -19,12 +19,13 @@ import { FaStar, FaHeart } from "react-icons/fa";
 import UserProfile from '../UserProfile/UserProfile';
 import NavbarTop from '../NavbarTop/NavbarTop';
 
-// Composant pour une card individuelle avec swipe (Hammer.js)
-function UserCard({ onLike }: { onLike?: () => void }) {
+// Composant pour une card individuelle avec swipe (Hammer.js) (IA pour l'animation)
+function UserCard({ onLike, onClick }: { onLike?: () => void, onClick?: () => void }) {
     const cardRef = useRef<HTMLDivElement>(null);
     const [dragX, setDragX] = useState(0);
     const [isLiked, setIsLiked] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
+    const [hasSwiped, setHasSwiped] = useState(false);
 
     useEffect(() => {
         if (!cardRef.current || typeof window === 'undefined') return;
@@ -46,6 +47,7 @@ function UserCard({ onLike }: { onLike?: () => void }) {
                 if (e.deltaX > 0) { // Uniquement vers la droite
                     setDragX(e.deltaX);
                     setIsDragging(true);
+                    setHasSwiped(true);
                 }
             });
 
@@ -63,6 +65,9 @@ function UserCard({ onLike }: { onLike?: () => void }) {
 
                 // Retour à la position initiale
                 setDragX(0);
+
+                // Réinitialise hasSwiped après un court délai
+                setTimeout(() => setHasSwiped(false), 100);
             });
         });
 
@@ -74,9 +79,17 @@ function UserCard({ onLike }: { onLike?: () => void }) {
         };
     }, [onLike]);
 
+    const handleClick = () => {
+        // Ne déclenche le onClick que si ce n'est pas un swipe
+        if (!hasSwiped && onClick) {
+            onClick();
+        }
+    };
+
     return (
         <article
             ref={cardRef}
+            onClick={handleClick}
             style={{
                 transform: `translateX(${dragX}px)`,
                 transition: isDragging ? 'none' : 'transform 0.3s ease-out',
@@ -84,7 +97,7 @@ function UserCard({ onLike }: { onLike?: () => void }) {
             className={`
                 flex w-[90%] h-34 m-3 rounded-2xl overflow-hidden cursor-grab active:cursor-grabbing
                 transition-colors duration-200
-                ${dragX > 50 ? 'bg-fuchsia-500' : 'bg-white/10'}
+                ${dragX > 50 ? 'bg-fuchsia-600' : 'bg-white/10'}
             `}
         >
             <div className='relative w-3/4 h-full rounded-2xl'>
@@ -120,15 +133,16 @@ function User() {
             {showNavBarTop && <NavbarTop />}
             {showProfile && <UserProfile onClose={() => { setShowProfile(false); setShowNavBarTop(true); }} />}
             <div id='User' className='flex flex-col items-center mt-18 mb-22'>
-               
-                <UserCard />
-                <UserCard />
-                <UserCard />
-                <UserCard />
-                <UserCard />
-                <UserCard />
 
-
+                <UserCard onClick={() => setShowProfile(true)} />
+                <UserCard onClick={() => setShowProfile(true)} />
+                <UserCard onClick={() => setShowProfile(true)} />
+                <UserCard onClick={() => setShowProfile(true)} />
+                <UserCard onClick={() => setShowProfile(true)} />
+                <UserCard onClick={() => setShowProfile(true)} />
+                <UserCard onClick={() => setShowProfile(true)} />
+                <UserCard onClick={() => setShowProfile(true)} />
+                    
             </div>
         </>
     )

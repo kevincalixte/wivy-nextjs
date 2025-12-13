@@ -15,6 +15,7 @@ function NavbarTop() {
   const isMessages = pathname === '/messages';
   const isAccount = pathname === '/account';
   const isFavorites = pathname === '/favorites';
+  const isLikes = pathname === '/likes';
   const isChat = pathname === '/chat';
 
   return (
@@ -26,14 +27,16 @@ function NavbarTop() {
           isWelcome
             ? 'fixed z-10 flex items-center w-[90%] h-10 mt-5 p-3 rounded-4xl backdrop-blur bg-white/20 text-white'
             : isMessages
-              ? 'absolute w-full'
+              ? 'absolute w-[90%] rounded-2xl mt-5 h-10 bg-white/15'
               : isAccount
-                ? 'absolute w-full'
+                ? 'absolute w-[90%] rounded-2xl mt-5 h-10 bg-white/15'
                 : isFavorites
-                  ? 'absolute w-full'
-                  : isChat
-                    ? 'fixed w-full'
-                    : 'absolute w-full flex items-center p-5 bg-linear-to-b from-black to-transparent text-white'
+                  ? 'absolute w-[90%] rounded-2xl mt-5 h-10 bg-white/15'
+                  : isLikes
+                    ? 'absolute w-[90%] rounded-2xl mt-5 h-10 bg-white/15'
+                    : isChat
+                      ? 'fixed w-full'
+                      : 'absolute w-full flex items-center p-5 bg-linear-to-b from-black to-transparent text-white'
         }
       >
         {/* Page Welcome */}
@@ -49,7 +52,7 @@ function NavbarTop() {
         {/* Page Messages */}
         <Link href={'/'} className=''>
           {isMessages ?
-            <div className='flex justify-evenly p-5'>
+            <div className='flex justify-evenly p-1'>
               <span className='text-xl'>Messages</span>
             </div>
             : ''}
@@ -58,7 +61,7 @@ function NavbarTop() {
         {/* Page Account */}
         <Link href={'/'} className=''>
           {isAccount ?
-            <div className='flex justify-evenly p-5'>
+            <div className='flex justify-evenly p-1'>
               <span className='text-xl'>Account</span>
             </div>
             : ''}
@@ -67,8 +70,16 @@ function NavbarTop() {
         {/* Page Favorites */}
         <Link href={'/'} className=''>
           {isFavorites ?
-            <div className='flex justify-evenly p-5'>
+            <div className='flex justify-evenly p-1'>
               <span className='text-xl'>Favorites</span>
+            </div>
+            : ''}
+        </Link>
+        {/* Page Likes */}
+        <Link href={'/'} className=''>
+          {isLikes ?
+            <div className='flex justify-evenly p-1'>
+              <span className='text-xl'>Likes</span>
             </div>
             : ''}
         </Link>
@@ -96,7 +107,7 @@ function NavbarTop() {
 
         <Link href={'/'} className='flex-1 z-10'>
           {/* Ne pas afficher le logo pour ces pages */}
-          {!(isWelcome || isMessages || isAccount || isFavorites || isChat) && (
+          {!(isWelcome || isMessages || isAccount || isFavorites || isChat || isLikes) && (
             <img className='w-10' src="/img/logos/wivy-app-logo-transparent.png" alt="" />
           )}
         </Link>

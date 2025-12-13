@@ -6,11 +6,9 @@ import NavbarInfos from '../components/NavbarInfos/NavbarInfos';
 
 
 function welcome() {
-  // Notifications dans la NavbarInfos
-  const [isNotification, setIsNotification] = useState(false);
   return (
     <>
-      {isNotification && <NavbarInfos />}
+      <NavbarInfos />
       <User />
       <NavbarBottom />
     </>

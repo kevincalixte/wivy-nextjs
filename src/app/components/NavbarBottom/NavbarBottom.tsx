@@ -33,14 +33,13 @@ function NavbarBottom({ onProfile, onChat }: { onProfile?: boolean; onChat?: boo
             <ul className='flex w-full gap-3 justify-evenly text-2xl'>
               <li><Link href={"/welcome"} className="flex items-center gap-1"><FiHome /></Link></li>
               <li><Link href={"/favorites"} className="flex items-center gap-1"><FiStar /></Link></li>
+              <li><Link href={"/likes"} className="flex items-center gap-1"><FiHeart /></Link></li>
               <li><Link href={"/messages"} className="flex items-center gap-1"><FiMessageSquare /></Link></li>
               <li><Link href={"/account"} className="flex items-center gap-1">< FiUser /></Link></li>
             </ul>
           </nav>
       }
-
-
-
+      
     </div>
   )
 }

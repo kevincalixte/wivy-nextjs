@@ -10,6 +10,8 @@
     "export": "next export"
   },
   "dependencies": {
+    "@types/hammerjs": "^2.0.46",
+    "hammerjs": "^2.0.8",
     "next": "^16.0.7",
     "react": "19.2.0",
     "react-dom": "19.2.0",
